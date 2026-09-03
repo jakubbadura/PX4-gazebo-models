@@ -1,0 +1,71 @@
+material Dusniky/Leaves
+{
+  technique
+  {
+    pass
+    {
+      cull_hardware none
+      cull_software none
+      alpha_rejection greater 128
+
+      texture_unit
+      {
+        texture Leaves.png
+      }
+    }
+  }
+}
+
+material Dusniky/Branch
+{
+  technique
+  {
+    pass
+    {
+      cull_hardware none
+      cull_software none
+      alpha_rejection greater 128
+
+      texture_unit
+      {
+        texture Branch.png
+      }
+    }
+  }
+}
+
+material Dusniky/Grass
+{
+  technique
+  {
+    pass
+    {
+      cull_hardware none
+      cull_software none
+      alpha_rejection greater 128
+
+      texture_unit
+      {
+        texture grass_tuft.png
+      }
+    }
+  }
+}
+
+material Dusniky/Wheat
+{
+  technique
+  {
+    pass
+    {
+      cull_hardware none
+      cull_software none
+      alpha_rejection greater 128
+
+      texture_unit
+      {
+        texture wheat_tuft.png
+      }
+    }
+  }
+}

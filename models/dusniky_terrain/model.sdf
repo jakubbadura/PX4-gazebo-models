@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.9">
+  <model name="dusniky_terrain">
+    <static>true</static>
+
+    <!-- 10x10 km SRTM Topography & Orthophoto Ground -->
+    <link name="terrain_link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>10000 10000</size>
+          </plane>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://dusniky_terrain/meshes/dusniky_terrain_10km.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- 3D OpenStreetMap Buildings (Visual only for 60+ FPS performance) -->
+    <link name="buildings_link">
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://dusniky_terrain/meshes/dusniky_buildings_10km.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+
+    <!-- 3D Official Gazebo Oak and Pine Trees (3,041 trees in forests, alleys & perimeter) -->
+    <link name="trees_link">
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://dusniky_terrain/meshes/dusniky_trees_official.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+  </model>
+</sdf>

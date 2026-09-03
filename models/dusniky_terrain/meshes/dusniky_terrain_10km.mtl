@@ -1,0 +1,7 @@
+newmtl terrain_mat
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.05 0.05 0.05
+Ns 10.0
+d 1.0
+map_Kd ../materials/textures/dusniky_10km_ortho.jpg
