@@ -43,12 +43,13 @@
     </include>
 
     <!-- Real-World WGS84 GPS Coordinates of Letiste Dusniky (LKDUSN) -->
+    <!-- Note: Elevation is WGS84 ellipsoidal height (222.0m AMSL + 44.5m EGM96 geoid undulation = 266.5m) to match Cesium World Terrain 1:1 -->
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
       <latitude_deg>50.412775</latitude_deg>
       <longitude_deg>14.198053</longitude_deg>
-      <elevation>222.0</elevation>
+      <elevation>266.5</elevation>
     </spherical_coordinates>
   
     
